@@ -34,3 +34,19 @@ fun calculateAvailableSpace() {
     box.usedSpace = 0
     println(box.avaliableSpace)
 }
+
+//Convert a var variable to val.
+class User {
+    val name: String = "Mert"
+    var surName: String = "BABACAN"
+        private set
+}
+
+fun testUser() {
+    val user = User()
+
+//"The following codes will not work."
+
+    user.name = "Mehmet"
+    user.surName = "ASLAN"
+}
