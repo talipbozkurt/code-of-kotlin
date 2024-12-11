@@ -68,3 +68,22 @@ var number2: Int? = null
 
 var result: Int? = 0
 result!!.plus(other:324)
+
+//   NUMBER
+
+val longNumber = 1586L // There's no 'l' in lowercase, because in some fonts it looks similar to '1'.
+val floayNumber = 19.90F // We used 'F' so that type inference doesn't occur. We told the IDE that it's a float.
+val floatnumber2 = 13f
+val doubleNumber = 3.14e10 //scientific notation
+val decimalNumber = 0197
+
+//val octalNumber = 0197  Doesenr work , not supported
+val hexaDecimalNumber = 0x759
+val binerayNumber = 0b01000011
+
+
+
+
+
+
+
