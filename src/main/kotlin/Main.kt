@@ -81,7 +81,11 @@ val decimalNumber = 0197
 val hexaDecimalNumber = 0x759
 val binerayNumber = 0b01000011
 
+// In Kotlin, it is an object, but when converted to bytecode,it is optimized into a primitive type.
+val number: Int = 100
 
+//Nullable variables are converted into a class when compiled into bytecode, not a primitive type.
+val boxedNumber: Int? = number
 
 
 
