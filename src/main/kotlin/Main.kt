@@ -47,6 +47,24 @@ fun testUser() {
 
 //"The following codes will not work."
 
-    user.name = "Mehmet"
-    user.surName = "ASLAN"
+    // user.name = "Mehmet"
+    // user.surName = "ASLAN"
 }
+
+
+//Nullable and Null
+
+//val number : Int= null -> Kotlin, we cannot assign null to a variable by default. We need to append a ? orr !! to the data type to allow null values.
+
+//"A variable can be assigned a null value,
+// but if null is assigned,
+// the code will not execute.
+var number1: Int? = null
+var number2: Int? = null
+
+//A variable can be assigned a null value.
+// However, if its null status is not checked and the variable is null,
+// the code will still execute.
+
+var result: Int? = 0
+result!!.plus(other:324)
