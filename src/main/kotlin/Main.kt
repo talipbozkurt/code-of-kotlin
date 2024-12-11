@@ -89,6 +89,13 @@ val boxedNumber: Int? = number
 
 
 
+//"An example of using `===` and how variables referring to the same number within the byte value range share the same address.
+
+val byte1: Byte = 100
+val byte2: Byte = 100
+
+println(byte1 === byte2)  // prints 'true' because of interning
+
 
 
 
