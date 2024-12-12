@@ -12,4 +12,18 @@ fun main() {
 
     println(exampleString)
 
+
+    // Examples of unicode
+    val blackHeart = '\u2665'
+    val heavyBlackHeart = '\u2764'
+
+    println(" \n First commit with $blackHeart") // ♥
+    println(" \n First commit with $heavyBlackHeart") // ❤
+
+    val ANSI_RED = "\u001B[31m"
+    val ANSI_RESET = "\u001B[0m"
+
+    println(" \n First commit with $ANSI_RED$blackHeart$ANSI_RESET ")
+
 }
+
