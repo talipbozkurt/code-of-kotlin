@@ -26,4 +26,38 @@ fun main() {
     println("numberValue : " + numberValue)  // bad practice / java habit
     println("numberValue : $numberValue") // templete usage
     println("numberValue lenght : ${numberValue.length}")// using property in string
+
+    /* Multiline String ( """ ) */
+    val rawPineTree = """"
+      *
+ $   ***
+    *****
+    """.trimIndent()
+
+    val rawPineTree2 = """"
+      *
+ $   ***
+    *****
+    """.trimMargin(marginPrefix = "$")
+
+    val rawPineTree3 = """"
+      *
+ $   ***
+    *****
+    """.trimIndent()
+
+
+    println(rawPineTree)
+    println(rawPineTree2)
+    println(rawPineTree3)
+
+
+    /*val price = """
+        Price \$_9.99
+        """ */  // Escape character doesn't work in multiline String
+
+    val price2 = """
+        Price ${'$'}_9.99
+        """
+
 }
