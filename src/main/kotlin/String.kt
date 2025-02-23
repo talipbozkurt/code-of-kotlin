@@ -1,3 +1,5 @@
+import java.util.*
+
 fun main() {
     val name = "Kotlin"
     val char1 = 'K'
@@ -59,5 +61,17 @@ fun main() {
     val price2 = """
         Price ${'$'}_9.99
         """
+    val age = 21
+    val message = String.format("Age : %d", age)
+    println(message) // Age : 21
+    val height = 1.7441848
+    val heightMessage = String.format("Height : %.2f meter ", height)
+    println(heightMessage) // Height : 1.74
 
+    val numb: Double = 121313134.3131
+    val usFormat = String.format(Locale.US, " format of US : %,.2f", numb)
+    println(usFormat)
+    val localeTR = Locale("tr", "TR") // Doğru Locale oluşturma yöntemi
+    val trFormat = String.format(localeTR, " format of TR : %,.2f", numb) // Değişken adı düzeltildi
+    println(trFormat)
 }
